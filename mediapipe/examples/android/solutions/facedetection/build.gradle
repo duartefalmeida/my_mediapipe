@@ -39,3 +39,10 @@ dependencies {
     implementation 'com.google.mediapipe:solution-core:latest.release'
     implementation 'com.google.mediapipe:facedetection:latest.release'
 }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '6.7.1'
+}
+
+task prepareKotlinBuildScriptModel {
+}

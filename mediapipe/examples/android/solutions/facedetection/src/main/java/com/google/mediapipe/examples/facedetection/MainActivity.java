@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
             this,
             FaceDetectionOptions.builder()
                 .setStaticImageMode(true)
-                .setModelSelection(0)
+                .setModelSelection(1)
                 .setMinDetectionConfidence(0.5f)
                 .build());
 
@@ -266,7 +266,7 @@ public class MainActivity extends AppCompatActivity {
     faceDetection =
         new FaceDetection(
             this,
-            FaceDetectionOptions.builder().setStaticImageMode(false).setModelSelection(0).build());
+            FaceDetectionOptions.builder().setStaticImageMode(false).setModelSelection(1).build());
     faceDetection.setErrorListener(
         (message, e) -> Log.e(TAG, "MediaPipe Face Detection error:" + message));
 
